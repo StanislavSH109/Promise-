@@ -1,0 +1,15 @@
+.main-section {
+    display: flex;
+}
+
+.main-section__image {
+    opacity: 0;
+    transition: .3s ease-in-out;
+    box-shadow: 0 0 10px 2px white;
+
+}
+
+.main-section__image--visible {
+    opacity: 1;
+    transition: .3s ease-in;
+}
