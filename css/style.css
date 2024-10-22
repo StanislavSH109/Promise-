@@ -1,2 +1,8 @@
+/* GLOBAL */
+@import "global/normalize.css";
+@import "global/reboot.css";
 
+/* BLOCKS */
+@import "blocks/header.css";
+@import "blocks/main.css";
 
