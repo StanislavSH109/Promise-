@@ -1,0 +1,11 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__title-text {
+    font-family: "Verdana", "Arial", sans-serif;
+    font-size: 35px;
+    line-height: 20px;
+}
