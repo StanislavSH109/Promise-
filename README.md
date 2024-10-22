@@ -1,2 +1,2 @@
-# Promise-
-Practice with promise functions
+# <h1 align="center">Promise</h1>
+<p align="center">Practice with promise functions</p>
