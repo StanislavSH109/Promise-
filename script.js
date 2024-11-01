@@ -1,14 +1,3 @@
-// const myPromise = new Promise((resolve, reject) => {
-//     const x = 10;
-//     if (x === 10) {
-//         resolve('Resolve');
-//     } else {
-//         reject('Error');
-//     }
-// })
-
-// console.log(myPromise);
-
 const arrayFirstRowURL = [
     'gif/29078-374013301_tiny.gif',
     'gif/32767-394004551_tiny.gif',
