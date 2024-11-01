@@ -4,10 +4,22 @@ const arrayURL = [
     'gif/37946-415263561_tiny.gif'
 ]
 
-document.addEventListener('DOMContentLoaded', function (e) {
-    setTimeout(() => {
-       console.log('Hello!');;
-    }, 3000)
+function createCard() {
+    const mainElement = document.querySelector('.main-section');
+    const divElement = document.createElement('div');
+    divElement.classList.add('card');
+    
+    arrayURL.forEach((item, index) => {
+        const imageElement = document.createElement('img');
+        imageElement.setAttribute('src', arrayURL[index]);
+        divElement.append(imageElement);
+        mainElement.append(divElement);
+        
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    createCard();
 });
 
 // const imageStockUrl = 'https://t3.ftcdn.net/jpg/02/73/16/24/240_F_273162497_ShAAB1TH0vhM4UUWbhBuao8jtGBDubwD.jpg';
