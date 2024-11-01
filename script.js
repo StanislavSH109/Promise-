@@ -9,13 +9,22 @@ function createCard(firstArray) {
     const divElement = document.createElement('div');
     divElement.classList.add('card');
     
-    arrayURL.forEach((item, index) => {
-        const imageElement = document.createElement('img');
-        imageElement.setAttribute('src', firstArray[index]);
-        divElement.append(imageElement);
-        mainElement.append(divElement);
-        
-    });
+
+    const urlPromise = new Promise((resolve, reject) => {
+        if (firstArray) {
+            resolve(arrayURL.forEach((item, index) => {
+                const imageElement = document.createElement('img');
+                imageElement.setAttribute('src', firstArray[index]);
+                divElement.append(imageElement);
+                mainElement.append(divElement);
+                
+            }));
+        } else {
+            reject('Ошибка массива URL');
+        }
+    })
+    console.log(urlPromise);
+    return urlPromise;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -23,6 +32,5 @@ document.addEventListener('DOMContentLoaded', () => {
         createCard(arrayURL);
     }, 3000);
 
-    setTimeout(() =>)
 });
 
